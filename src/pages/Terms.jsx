@@ -153,7 +153,7 @@ function Terms(props) {
     const validate = InputsValidate(inputarray, valuesarray);
     if (validate.length === 0) {
       axios
-        .post(url + "users/create_educationl/" + data.id_education, data)
+        .post(url + "users/create_education/" + data.id_education, data)
         .then((res) => {
           let response = res.data;
           if (response.token != null) {

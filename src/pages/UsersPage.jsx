@@ -414,14 +414,16 @@ const UsersPage = () => {
     ];
     const validate = InputsValidate(inputarray, valuesarray);
     if (validate.length === 0) {
+      console.log(user.user.id_user);
       if (data.password === data.rep_password) {
         axios
-          .post(url + "users/create_user", data)
+          .put(url + "users/update_user/" + user.user.id_user, data)
           .then((res) => {
             let response = res.data;
             if (response.token != null) {
               Users.user = response.token.user;
               clearData();
+              hideEditDialog();
               ToastCustom("success", response.message, "Successful!");
             } else {
               ToastCustom("error", response.message, "Create user error!");
