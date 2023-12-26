@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io/"
+const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io"
 
 const getUsers = async () => await (await axios.get(url + "/users/get_users"));
 

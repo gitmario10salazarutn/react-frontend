@@ -28,11 +28,15 @@ const UsersPage = () => {
 
   useEffect(() => {
     async function loadUsers() {
-      const u = await (await getUsers()).data;
-      setUsers(u);
+      try {
+        const u = await (await getUsers()).data;
+        setUsers(u);
+      } catch (error) {
+        console.error("Error al cargar usuarios:", error);
+      }
     }
     loadUsers();
-  });
+  }, []);
 
   useEffect(() => {
     async function loadGenders() {
