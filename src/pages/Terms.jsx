@@ -19,7 +19,7 @@ function Terms(props) {
   const [educations, setEducations] = useState([]);
   const [educations_a, setEducationsA] = useState([]);
   const [educations_b, setEducationsB] = useState([]);
-  const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io/";
+  const url = "https://app-745fa5c5-fe4d-484d-9966-349a44a9609d.cleverapps.io/";
 
   const user = props.user;
 

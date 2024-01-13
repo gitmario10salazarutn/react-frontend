@@ -23,7 +23,8 @@ import { InputsValidate } from "../utils/Validations";
 import Loglefth from "./Loglefth";
 
 function Copyright(props) {
-  const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io/";
+  const url =
+    "https://app-745fa5c5-fe4d-484d-9966-349a44a9609d.cleverapps.io/";
   return (
     <Typography
       variant="body2"
@@ -48,7 +49,7 @@ function Login() {
   let [id_user, setIdUser] = useState("");
   let [password, setPassword] = useState("");
   let [user, setUser] = useState([]);
-  const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io/";
+  const url = "https://app-745fa5c5-fe4d-484d-9966-349a44a9609d.cleverapps.io/";
   let data = {
     id_user: "",
     password: "",

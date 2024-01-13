@@ -33,7 +33,7 @@ function MyProfile(props) {
   const [language, setLanguage] = useState([]);
   const [languageLevels, setLanguageLevels] = useState([]);
   const [languagesProgramming, setLanguagesProgramming] = useState([]);
-  const url = "https://app-9f0a1fa0-f478-4848-a93a-b9847d089c72.cleverapps.io/";
+  const url = "https://app-745fa5c5-fe4d-484d-9966-349a44a9609d.cleverapps.io/";
 
   const user = props.user;
 
